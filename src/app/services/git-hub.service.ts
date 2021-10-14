@@ -12,7 +12,6 @@ export class GitHubService {
   getData(): Observable<any> {
     const url = "http://api.github.com/users"
     
-    return this.http.get<any>(url)
-  
+    return this.http.get<any>(url);  
 
   }
