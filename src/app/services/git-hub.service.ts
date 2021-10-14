@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 import {Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GitHubService {
 
-  constructor() { }
+  constructor(private http:HttpClient ) { }
 }
