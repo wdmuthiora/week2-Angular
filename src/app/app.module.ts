@@ -17,13 +17,10 @@ import { HttpClientModule } from '@angular/common/http';
     ResultsSectionComponent,
     UserDetailsSectionComponent,
     SearchFormComponent,
-    LandingPageComponent
+    LandingPageComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
