@@ -7,6 +7,7 @@ import { SearchSectionComponent } from './search-section/search-section.componen
 import { ResultsSectionComponent } from './results-section/results-section.component';
 import { UserDetailsSectionComponent } from './user-details-section/user-details-section.component';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SearchFormComponent } from './search-form/search-form.component';
     SearchSectionComponent,
     ResultsSectionComponent,
     UserDetailsSectionComponent,
-    SearchFormComponent
+    SearchFormComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
