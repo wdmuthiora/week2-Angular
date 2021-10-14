@@ -1,11 +1,14 @@
 <div class="container">
   <nav class="navbar bg-dark navbar-dark fixed-top">
     <br>
-    <span class="navbar-text" style="color: white;">{{title}}</span>
+    <h1><span class="navbar-text" style="color: white;">{{title}}</span></h1>
     <br>
   </nav>
   <hr>
 </div>
+<br>
+<div class="container">
+  <app-search-section></app-search-section>
+  <app-results-section></app-results-section>
 
-<router-outlet></router-outlet>
-<app-search-section style="margin: 500px;"></app-search-section>
+</div>
