@@ -8,6 +8,7 @@ import { ResultsSectionComponent } from './results-section/results-section.compo
 import { UserDetailsSectionComponent } from './user-details-section/user-details-section.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
