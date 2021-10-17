@@ -6,11 +6,15 @@ import { GitHubService } from './services/git-hub.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+   
 export class AppComponent {
   title = 'GITHUB SEARCH';
   users!: String[];
-  constructor(private githubService: GitHubService) {}
-  getUsers() {
 
+  constructor(private githubService: GitHubService) { }
+  
+  getUsers() {
+    this.githubService.getData().subscribe((data: any) => { console.log(data)  })
   }
+  
 }

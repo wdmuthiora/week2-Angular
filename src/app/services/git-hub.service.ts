@@ -6,12 +6,14 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GitHubService {
+  private url!:string
 
-  constructor(private http: HttpClient) {
-  };
+  constructor(private http: HttpClient) {};
+
   getData(): Observable<any> {
-    const url = "http://api.github.com/users"
-    
-    return this.http.get<any>(url);  
+
+    const url = 'http://api.github.com/users';
+    return this.http.get<any>(url);
 
   }
+} 

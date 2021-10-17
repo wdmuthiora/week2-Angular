@@ -1,14 +1,18 @@
 <div class="container">
+
   <nav class="navbar bg-dark navbar-dark fixed-top">
     <br>
     <h1><span class="navbar-text" style="color: white;">{{title}}</span></h1>
     <br>
   </nav>
+
   <hr>
-</div>
-<br>
-<div class="container">
-  <app-search-section></app-search-section>
+  <br>  
+  <div class="container">
+     <app-search-section></app-search-section>
+      <button type="submit" (click)="getUsers()" class="btn btn-lg btn-dark btn-outline-warning">Search</button>
+  </div>
   <app-results-section></app-results-section>
+
 
 </div>

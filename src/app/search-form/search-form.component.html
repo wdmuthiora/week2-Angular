@@ -1,5 +1,5 @@
 <div class="container-fluid">
-
+{{profile}}
   <hr>
   <h5 class="text-center"></h5>
 
@@ -7,13 +7,11 @@
 
     <div class="form-group ">
       <label for="author">Search GitHub</label>
-      <input class="form-control" type="text" required author="author" name="author">
+      <input class="form-control" type="text" author="author" name="author">
     </div>
 
-    <div>
     <br>     
-    <button type="submit" (click)="getUsers()" class="btn btn-lg btn-dark btn-outline-warning">Search</button>
-    </div>
+   
 
     <hr>
   </form>

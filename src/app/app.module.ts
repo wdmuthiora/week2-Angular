@@ -9,6 +9,7 @@ import { UserDetailsSectionComponent } from './user-details-section/user-details
 import { SearchFormComponent } from './search-form/search-form.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GitHubService } from './services/git-hub.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     LandingPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [],
+  providers: [GitHubService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
