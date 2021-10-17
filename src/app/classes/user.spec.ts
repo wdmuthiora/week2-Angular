@@ -1,4 +1,4 @@
-export class Repository {
+export class User {
   constructor(
     public login: string,
     public id: number,

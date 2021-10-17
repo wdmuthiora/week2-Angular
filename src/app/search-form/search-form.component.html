@@ -7,12 +7,11 @@
 
     <div class="form-group ">
       <label for="author">Search GitHub</label>
-      <input class="form-control" type="text" author="author" name="author" placeholder="Enter username or repository name">
+      <input class="form-control" type="text" author="author" name="author" placeholder="Enter username or repository name" #text>
     </div>
 
     <br>    
-    <button type="submit" class="btn btn-lg btn-dark btn-outline-warning">Search</button>
-   
+    <button type="submit" class="btn btn-lg btn-dark btn-outline-warning" (click)="doSearch(text.value)">Search</button>
 
     <hr>
   </form>
