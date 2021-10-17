@@ -6,7 +6,9 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GitHubService {
-  private url!:string
+  private url!: string;
+  private apiKey!: string;
+
 
   constructor(private http: HttpClient) {};
 
