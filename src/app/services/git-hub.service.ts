@@ -17,7 +17,7 @@ export class GitHubService {
     // const url = 'http://api.github.com/users';
     // return this.http.get<any>(url);
     const url = 'http://api.github.com/users';
-    "https://api.github.com/users/${}?access_token=' + apiKey"
+    let apiUrl = `https://api.github.com/users/term={term}?access_token=' + apiKey`;
     return this.http.get(url);
   }
 } 
