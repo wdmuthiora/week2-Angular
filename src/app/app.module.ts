@@ -7,7 +7,6 @@ import { SearchSectionComponent } from './search-section/search-section.componen
 import { ResultsSectionComponent } from './results-section/results-section.component';
 import { UserDetailsSectionComponent } from './user-details-section/user-details-section.component';
 import { SearchFormComponent } from './search-form/search-form.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GitHubService } from './services/git-hub.service';
 
@@ -18,7 +17,6 @@ import { GitHubService } from './services/git-hub.service';
     ResultsSectionComponent,
     UserDetailsSectionComponent,
     SearchFormComponent,
-    LandingPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [GitHubService],

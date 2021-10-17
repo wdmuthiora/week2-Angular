@@ -1,18 +1,33 @@
 <div class="container">
 
-  <nav class="navbar bg-dark navbar-dark fixed-top">
+  <!-- <nav class="navbar bg-dark navbar-dark fixed-top">
     <br>
     <h1><span class="navbar-text" style="color: white;">{{title}}</span></h1>
     <br>
+  </nav> -->
+
+  <nav class="navbar fixed-top navbar-dark bg-dark">
+    <a class="navbar-brand navbar-dark bg-dark" routerLink="/search" routerLink="active">
+       {{title}}
+    </a>
+    <a class="navbar-brand navbar-dark bg-dark" routerLink="/results" routerLinkActive="active">
+      RESULTS
+
+    </a>
+
+    <a class="navbar-brand navbar-dark bg-dark" routerLink="/user-details" routerLinkActive="active">
+      USER DETAILS
+    </a>
+
   </nav>
 
   <hr>
-  <br>  
+  <br>
   <div class="container">
-     <app-search-section></app-search-section>
-      
+    <app-search-section></app-search-section>
   </div>
+
   <app-results-section></app-results-section>
 
-
 </div>
+<router-outlet></router-outlet>
